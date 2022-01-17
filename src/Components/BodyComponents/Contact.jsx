@@ -5,6 +5,8 @@ import image from "../../images/contactus.jpg";
 import {RenderSectionHeading } from '../Common/CommonComponent';
 import { RenderInputText } from '../Common/FormComponent';
 import ScrollAnimation from 'react-animate-on-scroll';
+import axios from 'axios';
+const apiurl="http://localhost:4000/message"
 
 
 export default function Contact() {
@@ -35,10 +37,16 @@ export default function Contact() {
         e.preventDefault()
         console.log("submitted,", state.data);
         //api call to post data
+       axios.post(apiurl,state.data)
+        .then(res=>{
+         alert(res.data.message)
+          
+      })
     }
 
     return (
       <Box className={classes.section} id='Contact'>
+        
         <ScrollAnimation animateIn='fadeIn'>
         <container maxwidth='xl'>
       <Grid container>

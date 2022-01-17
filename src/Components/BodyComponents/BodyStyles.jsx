@@ -13,7 +13,7 @@ export const useStyle = makeStyles((theme)=>({
     //common
     divider:{
         width:"64px",
-        height:"4px",
+        height:"40px",
         backgroundColor:Theme.colors.primary,
     },
 

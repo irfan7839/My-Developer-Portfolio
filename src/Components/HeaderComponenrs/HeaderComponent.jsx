@@ -52,7 +52,7 @@ export default function HeaderComponent() {
                 </Typography>
 
               {Decorator({
-                  label:"About us",
+                  label:"About Me",
                   withIcon:true,
                   Icon:<ArrowDownwardRoundedIcon/>,
                   })}

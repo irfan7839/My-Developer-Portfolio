@@ -15,7 +15,7 @@ export default function Navbar({navlinks, handleDrawerToogler}) {
       <AppBar position="fixed" className={classes.navbar}>
         <Toolbar className={classes.ToolBar}> 
           <Typography variant="h5" component="h6" >
-            {"<GreatCoders/>"}
+            {"<My Portfolio/>"}
           </Typography> 
           <Box component={Hidden} xsDown>
               <Box>
